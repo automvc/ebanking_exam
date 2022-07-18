@@ -1,0 +1,189 @@
+{
+    "total": 738,
+    "rows": [
+        {
+            "uuid": "61e23c1e-081c-4576-9575-1c4792086bcc",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "CNY -88(GBP -10.9032)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment CNY"
+        },
+        {
+            "uuid": "fbe8391a-7736-42e0-abf7-e8c7b31093f6",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "USD -660(RUB -37207.500)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment USD"
+        },
+        {
+            "uuid": "49fb8cb8-d0af-4c4c-9dcb-c3ef924495e8",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "AUD 178(USD 121.7876)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit AUD"
+        },
+        {
+            "uuid": "a1da93a8-3689-42b4-af53-3f6575080ab8",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "HKD 261(GBP 27.7443)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit HKD"
+        },
+        {
+            "uuid": "fff169cc-694f-43c4-9e15-a631a57dc978",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "GBP 954(CHF 1113.9858)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit GBP"
+        },
+        {
+            "uuid": "5b3b8bb7-6419-431c-aec0-29f95302ba96",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "JPY -711(USD -5.1192)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment JPY"
+        },
+        {
+            "uuid": "42123da9-f3a8-4118-935f-b2e66b14b4bf",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "KRW 3(USD 0.00240)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit KRW"
+        },
+        {
+            "uuid": "98d7b2e5-9ced-4506-9183-5486d1dc78a0",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "USD 235(HKD 1844.75)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit USD"
+        },
+        {
+            "uuid": "fcc3cc72-4631-4007-b14f-52cc34ec3aab",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "RUB 804(USD 14.2308)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit RUB"
+        },
+        {
+            "uuid": "c2f8435a-2084-47ab-90f0-ec3a9d97e1a4",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "CNY -6",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment CNY"
+        },
+        {
+            "uuid": "72244ac1-bc76-49d1-9068-abb8e5dfa24b",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "GBP 170(EUR 200.4640)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit GBP"
+        },
+        {
+            "uuid": "31bf9190-be57-4a1e-bcb6-c27f7437a749",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "USD -884(HKD -6939.40)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment USD"
+        },
+        {
+            "uuid": "660166f3-e1d5-47a3-a9ba-c322005260d4",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "AUD -628(USD -429.6776)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment AUD"
+        },
+        {
+            "uuid": "bbaa3fb4-5b42-4d22-9816-f9863e26c95f",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "CNY -189(HKD -220.374)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment CNY"
+        },
+        {
+            "uuid": "d4468ca2-f6ce-4345-aefa-5186190befc1",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "GBP -3(USD -3.5961)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment GBP"
+        },
+        {
+            "uuid": "463b1f31-ac04-4f14-90fd-88eaa1622bb5",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "USD 500(CHF 486.8000)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit USD"
+        },
+        {
+            "uuid": "c2f287f5-a371-47d8-b223-3fa447e93afb",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "HKD 563(CNY 482.8288)",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit HKD"
+        },
+        {
+            "uuid": "821d619f-ba8b-4df9-aebe-41a7e140ad74",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "EUR -0(GBP 0.0000)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment EUR"
+        },
+        {
+            "uuid": "26045a50-5ab8-4f3b-8f1c-0afa11828255",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "USD -857(EUR -842.6024)",
+            "date": "19-07-2022",
+            "descriptioin": "Online payment USD"
+        },
+        {
+            "uuid": "5c0969ba-7784-48bc-83ae-e1113d8feba7",
+            "clientId": "Kingstar",
+            "clientName": "Kingstar",
+            "iban": "CH93-0000-0000-0000-0000-0",
+            "amount": "CNY 803",
+            "date": "19-07-2022",
+            "descriptioin": "Deposit CNY"
+        }
+    ],
+    "errorCode": null,
+    "errorMsg": null,
+    "msg": null,
+    "msgCode": null
+}
