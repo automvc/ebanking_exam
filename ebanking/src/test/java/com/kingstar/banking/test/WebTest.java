@@ -25,6 +25,11 @@ import org.teasoft.honey.osql.core.Logger;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class WebTest {
+	
+	static {
+		DataInit.init();
+	}
+	
 	@Autowired
 	private WebApplicationContext wac;
 	private MockMvc mockMvc;
@@ -43,10 +48,12 @@ public class WebTest {
 	public void testWebVisit() {
 		boolean result = false;
 		try {
-			mockMvc.perform(MockMvcRequestBuilders.post("/account/kingstar/07-2022")
+			String responseStr=mockMvc.perform(MockMvcRequestBuilders.post("/account/Kingstar/06-2022")
 					.contentType(MediaType.APPLICATION_JSON))
 					.andExpect(MockMvcResultMatchers.status().isOk()).andReturn().getResponse()
 					.getContentAsString();
+			
+			Logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>responseStr:"+responseStr);
 
 			result = true;
 		} catch (Exception e) {

@@ -65,7 +65,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 //			System.out.println(">>>>>>>>>>>>>recordRows..." + recordRows);
 			Exchange beans[] = null;
 			if (StringUtils.isNotBlank(recordRows)) {
-				mapper.readValue(recordRows, Exchange[].class);
+				beans = mapper.readValue(recordRows, Exchange[].class);
 			}
 			list = toList(beans);
 			if (ObjectUtils.isNotEmpty(list)) cache.put(date, list);

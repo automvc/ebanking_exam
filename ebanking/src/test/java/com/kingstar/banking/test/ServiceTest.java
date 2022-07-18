@@ -26,13 +26,17 @@ import com.kingstar.banking.service.AccountService;
 public class ServiceTest {
 	@Autowired
 	private AccountService accountService;
+	
+	static {
+		DataInit.init();
+	}
 
 	@Test
 	public void test() {
 		boolean result = false;
 		try {
-			String clientId = "kingstar";
-			String monthYear = "07-2022";
+			String clientId = "Kingstar";
+			String monthYear = "06-2022";
 			this.accountService.countAndSelect(clientId, monthYear, 0, 10);
 			
 			result = true;
