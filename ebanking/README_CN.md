@@ -12,6 +12,10 @@ java -jar eureka-server-0.8.jar --spring.profiles.active=two
 要修改数据库连接信息,在applicationContext.xml	  
 默认是mysql,不同数据库要作相应修改  
 property name="url" value="jdbc:mysql://127.0.0.1:3306/bee?characterEncoding=UTF-8&amp;useSSL=false"/>  
+
+default database name:bee  
+username:root  
+password:123456  
   
 访问url:http://localhost:8089/rate  
 获取某天的汇率列表:  

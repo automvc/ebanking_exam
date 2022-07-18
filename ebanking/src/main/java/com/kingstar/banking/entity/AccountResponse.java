@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  * @author Kingstar
- * @since  1.17
+ * @since  1.0
  */
 public class AccountResponse implements Serializable {
 	
