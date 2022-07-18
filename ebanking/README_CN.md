@@ -33,7 +33,7 @@ java -jar springcloud-service-0.8.jar --server.port=8086
 java -jar banking-0.8.jar --server.port=8085  
 java -jar banking-0.8.jar --server.port=8086  
   
-直接访问:http://localhost:8085/account/kingstar/07-2022  
+直接访问(test):http://localhost:8085/account/Kingstar/06-2022  
   
 ## 四、启动服务消费者(feign-consumer)  
 feign-consumer  
