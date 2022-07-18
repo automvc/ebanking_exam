@@ -7,6 +7,7 @@
 package com.kingstar.exchange.serviceimpl;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,9 +48,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 		list = cache.get(date);
 		if (list != null) return list;
 
-//		System.out.println(">>>>>>>>>>>>>...rateUrl:" + rateUrl);
 		String json = HttpclientUtil.getJson(rateUrl + "/" + date);
-//		System.out.println(">>>>>>>>>>>>>HttpclientUtil.getJson..." + json);
 
 		try {
 			ObjectMapper mapper = new ObjectMapper();
@@ -62,7 +61,6 @@ public class ExchangeServiceImpl implements ExchangeService {
 				recordRows = jsonNode.toString();
 			}
 
-//			System.out.println(">>>>>>>>>>>>>recordRows..." + recordRows);
 			Exchange beans[] = null;
 			if (StringUtils.isNotBlank(recordRows)) {
 				beans = mapper.readValue(recordRows, Exchange[].class);
@@ -77,7 +75,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 	}
 
 	private List<Exchange> toList(Exchange beans[]) {
-		if (beans == null) return null;
+		if (beans == null) return Collections.emptyList();
 		List<Exchange> list = new ArrayList<>();
 		for (int i = 0; i < beans.length; i++) {
 			list.add(beans[i]);
@@ -85,7 +83,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 		return list;
 	}
 
-	private static final String s = ":"; // separator
+	private static final String SEP = ":"; // separator
 
 	private void initRate() {
 		String today = DateUtil.currentDate(DATE_FORMATTER);
@@ -94,7 +92,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 		for (int i = 0; list != null && i < list.size(); i++) {
 			bean = list.get(i);
 			if (today.equals(bean.getDate())) { // double check
-				rateMap.put(today + s + bean.getCurrencyFrom() + s + bean.getCurrencyTo(),
+				rateMap.put(today + SEP + bean.getCurrencyFrom() + SEP + bean.getCurrencyTo(),
 						bean.getRate());
 			}
 		}
@@ -103,7 +101,7 @@ public class ExchangeServiceImpl implements ExchangeService {
 
 	public String getCurrentRate(String currencyFrom, String currencyTo) {
 		String today = DateUtil.currentDate(DATE_FORMATTER);
-		String key = today + s + currencyFrom + s + currencyTo;
+		String key = today + SEP + currencyFrom + SEP + currencyTo;
 		String rate = rateMap.get(key);
 		if (rate != null) {
 			return rate;

@@ -18,6 +18,8 @@ import com.kingstar.banking.entity.Account;
  * @since  1.0
  */
 public class TableInit {
+	
+	private TableInit() {}
 
 	public static void createTable() {
 		if (HoneyUtil.isMysql()) {
@@ -28,7 +30,6 @@ public class TableInit {
 	}
 
 	private static void createTableForMysql() {
-//		String dropSql="DROP TABLE IF EXISTS `account`;";
 		String createSql = "CREATE TABLE `account` ("
 				+ "  `id` bigint(20) NOT NULL AUTO_INCREMENT,"
 				+ "  `uuid` varchar(64) COLLATE utf8_bin DEFAULT NULL,"
@@ -48,8 +49,6 @@ public class TableInit {
 		
 		PreparedSql pre=BF.getPreparedSql();
 		
-		
-//		pre.modify(dropSql);
 		try {
 			pre.modify(createSql);
 		} catch (Exception e) {

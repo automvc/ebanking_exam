@@ -21,6 +21,9 @@ import org.teasoft.honey.osql.core.Logger;
  * @since  1.0
  */
 public class HttpclientUtil {
+	
+	private HttpclientUtil() {}
+	
 	public static String getJson(String urlStr) {
 		String json = "";
 		CloseableHttpClient closeableHttpClient = HttpClients.createDefault();
@@ -40,12 +43,10 @@ public class HttpclientUtil {
 		} catch (Exception e) {
 			Logger.error(e.getMessage(), e);
 		} finally {
-			if (closeableHttpClient != null) {
-				try {
-					closeableHttpClient.close();
-				} catch (IOException e) {
-					Logger.error(e.getMessage(), e);
-				}
+			try {
+				closeableHttpClient.close();
+			} catch (IOException e) {
+				Logger.error(e.getMessage(), e);
 			}
 			if (response != null) {
 				try {

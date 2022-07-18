@@ -8,6 +8,7 @@ package com.kingstar.banking.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +27,7 @@ import com.kingstar.banking.service.AccountService;
 public class AccountRest {
 
 	@Autowired
-	private AccountService AccountService;
+	private AccountService accountService;
 
 	/**
 	 * fetch one page transaction records by client Id and an arbitrary calendar month.
@@ -36,14 +37,14 @@ public class AccountRest {
 	 * @param rows  number of records on one page.
 	 * @return
 	 */
-	@RequestMapping("/{clientId}/{monthYear}")
+	@PostMapping("/{clientId}/{monthYear}")
 	public Result list(@PathVariable String clientId, @PathVariable String monthYear,
 			@RequestParam(value = "page", defaultValue = "1", required = false) int page,
 			@RequestParam(value = "rows", defaultValue = "20", required = false) int rows) {
 
 		Result result = new Result();
 		// TODO Next, will get the value from kafka.
-		PageWarp pageWarp = AccountService.countAndSelect(clientId, monthYear,
+		PageWarp pageWarp = accountService.countAndSelect(clientId, monthYear,
 				(page - 1) * rows, rows);
 		result.setTotal(pageWarp.getTotal());
 		result.setRows(pageWarp.getList());

@@ -13,7 +13,7 @@
 	<groupId>com.kingstar</groupId>
 	<artifactId>banking</artifactId>
 	<version>0.8</version>
-	<name>springcloud-service</name>
+	<name>banking</name>
 	<description>springcloud-service project with Spring Cloud.</description>
 
 	<properties>

@@ -12,6 +12,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.teasoft.bee.osql.Condition;
+import org.teasoft.bee.osql.OrderType;
 import org.teasoft.bee.osql.SuidRich;
 import org.teasoft.honey.osql.core.BeeFactoryHelper;
 import org.teasoft.honey.util.StringUtils;
@@ -44,7 +45,7 @@ public class AccountServiceImpl implements AccountService {
 		account.setClientId(clientId);
 		account.setMonthYear(monthYear);
 
-		Condition condition = getCondition(account);
+		Condition condition = getCondition();
 
 		int total = suidRich.count(account, condition);
 
@@ -62,9 +63,10 @@ public class AccountServiceImpl implements AccountService {
 		return new PageWarp(total, newList);
 	}
 
-	private Condition getCondition(Account entity) {
+	private Condition getCondition() {
 		Condition condition = BeeFactoryHelper.getCondition();
 		// Add the business logic if need.
+		condition.orderBy("date", OrderType.DESC);
 
 		return condition;
 	}
