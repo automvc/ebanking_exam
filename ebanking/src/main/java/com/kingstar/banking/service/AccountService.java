@@ -7,21 +7,22 @@
 package com.kingstar.banking.service;
 
 import com.automvc.common.jq.PageWarp;
-import com.automvc.common.jq.Result;
-
-import com.kingstar.banking.entity.Account;
 
 /**
  * @author Kingstar
  * @since  1.0
  * Create on 2022-07-16
  */
-public interface AccountService {  
+public interface AccountService {
 
-	public boolean isWrongBizForUpdate(Result result, Account entity);
-
-	public Account process(Account entity);
-
-	public PageWarp countAndSelect(Account entity, int start, int size);
+	/**
+	 * fetch one page transaction records by client Id and an arbitrary calendar month.
+	 * @param clientId client Id
+	 * @param monthYear date,format:MM-yyyy
+	 * @param start start index.
+	 * @param size number of records on one page.
+	 * @return
+	 */
+	public PageWarp countAndSelect(String clientId, String monthYear, int start, int size);
 
 }

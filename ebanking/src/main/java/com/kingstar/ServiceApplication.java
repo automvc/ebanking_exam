@@ -1,4 +1,4 @@
-package com.kingstar.banking;
+package com.kingstar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

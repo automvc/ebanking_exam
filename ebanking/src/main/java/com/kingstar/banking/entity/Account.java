@@ -23,9 +23,11 @@ public class Account implements Serializable {
     private String clientName;
     private String iban;
     private String amount;
-    private String currencyType;
+    private String currencyHome; 
+    private String currencyType; //currency type of transaction
     private String date;
     private String monthYear;
+    private Boolean flag; //credit:1 , debit:0
     private String descriptioin;
 
     public Long getId() {
@@ -84,7 +86,15 @@ public class Account implements Serializable {
 	    this.currencyType = currencyType;
     }
     
-    public String getDate() {
+    public String getCurrencyHome() {
+		return currencyHome;
+	}
+
+	public void setCurrencyHome(String currencyHome) {
+		this.currencyHome = currencyHome;
+	}
+
+	public String getDate() {
 	    return date;
     }
 
@@ -100,7 +110,15 @@ public class Account implements Serializable {
 	    this.monthYear = monthYear;
     }
     
-    public String getDescriptioin() {
+    public Boolean getFlag() {
+		return flag;
+	}
+
+	public void setFlag(Boolean flag) {
+		this.flag = flag;
+	}
+
+	public String getDescriptioin() {
 	    return descriptioin;
     }
 
@@ -117,9 +135,11 @@ public class Account implements Serializable {
 		 str.append(",clientName=").append(clientName);
 		 str.append(",iban=").append(iban);
 		 str.append(",amount=").append(amount);
+		 str.append(",currencyHome=").append(currencyHome);
 		 str.append(",currencyType=").append(currencyType);
 		 str.append(",date=").append(date);
 		 str.append(",monthYear=").append(monthYear);
+		 str.append(",flag=").append(flag);
 		 str.append(",descriptioin=").append(descriptioin);
 		 str.append("]");			 
 		 return str.toString();	
