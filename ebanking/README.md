@@ -9,7 +9,7 @@ ebanking service
 exchange rate (simulate from the third-porry provider)  
 
 ## 3.eureka-server  
-Service registration and discovery  
+Service register and discovery  
 
 ## 4.feign-consumer  
 services load balance.  

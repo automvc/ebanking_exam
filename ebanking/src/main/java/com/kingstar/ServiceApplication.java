@@ -7,8 +7,11 @@ import org.springframework.context.annotation.ImportResource;
 
 import com.kingstar.banking.init.TableInit;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @EnableDiscoveryClient
 @SpringBootApplication
+@EnableSwagger2
 @ImportResource("classpath:applicationContext.xml")
 public class ServiceApplication {
 

@@ -17,11 +17,15 @@ import com.automvc.common.jq.PageWarp;
 import com.automvc.common.jq.Result;
 import com.kingstar.banking.service.AccountService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+
 /**
  * @author Kingstar
  * @since  1.0
  * Create on 2022-07-16
  */
+@Api("Account Rest API")
 @RestController("account")
 @RequestMapping("account")
 public class AccountRest {
@@ -37,6 +41,7 @@ public class AccountRest {
 	 * @param rows  number of records on one page.
 	 * @return
 	 */
+	@ApiImplicitParam
 	@PostMapping("/{clientId}/{monthYear}")
 	public Result list(@PathVariable String clientId, @PathVariable String monthYear,
 			@RequestParam(value = "page", defaultValue = "1", required = false) int page,
