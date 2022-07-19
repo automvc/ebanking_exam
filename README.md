@@ -14,7 +14,7 @@ Service register and discovery
 ## 4.feign-consumer  
 services load balance.  
 
-# Starting Steps
+# Starting Steps  
 spring cloud微服务启动  
 涉及服务注册，服务发现，负载均衡，服务消费。  
 ## 1. 启动注册服务器(eureka-server)  
@@ -56,3 +56,9 @@ feign-consumer
 ## 5. 访问服务消费者工程的url  
 http://localhost:9011/account/kingstar/07-2022  
 会交替访问两个服务提供者  
+
+# Document & Diagrams  
+
+[Doc link](https://github.com/automvc/ebanking_exam/tree/master/Doc)  
+
+
