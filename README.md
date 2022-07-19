@@ -60,5 +60,5 @@ http://localhost:9011/account/kingstar/07-2022
 # Document & Diagrams  
 
 [Doc link](https://github.com/automvc/ebanking_exam/tree/master/Doc)  
-
+[Doc link in gitee](https://gitee.com/automvc/ebanking_exam/tree/master/Doc)  
 
