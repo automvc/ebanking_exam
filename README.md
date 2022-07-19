@@ -62,3 +62,10 @@ http://localhost:9011/account/kingstar/07-2022
 [Doc link](https://github.com/automvc/ebanking_exam/tree/master/Doc)  
 [Doc link in gitee](https://gitee.com/automvc/ebanking_exam/tree/master/Doc)  
 
+# Query optimization description  
+Add index to frequently used query fields,as account table add index on (client_id,month_year),  
+exchange table add index on (date).  
+Use cache for Stable data.  
+put the exchange rate data in Hash structure ,time complexity is O(1).
+
+
