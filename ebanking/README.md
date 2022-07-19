@@ -56,3 +56,9 @@ feign-consumer
 ## 5. 访问服务消费者工程的url  
 http://localhost:9011/account/kingstar/07-2022  
 会交替访问两个服务提供者  
+
+# Document & Diagrams  
+
+[Doc link](https://github.com/automvc/ebanking_exam/tree/master/Doc)  
+[Doc link in gitee](https://gitee.com/automvc/ebanking_exam/tree/master/Doc)  
+
